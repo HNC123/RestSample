@@ -13,13 +13,13 @@ public class RestController {
     public String getMessage(){
         return "Hello Welcome";
     }
-@RequestMapping(value="/getEmp/{sid}",method = RequestMethod.GET)
-public Employee getEmployee(@PathVariable(value = "sid") String sid){
-        System.out.print(sid);
-    Employee emp=new Employee();
-    emp.setEmail("avc@gmail.com");
-    emp.setName("and");
-    emp.setSid(100);
-    return  emp;
-}
+    @RequestMapping(value="/getEmp/{sid}",method = RequestMethod.GET)
+    public Employee getEmployee(@PathVariable(value = "sid") String sid){
+            System.out.print(sid);
+        Employee emp=new Employee();
+        emp.setEmail("avc@gmail.com");
+        emp.setName("and");
+        emp.setSid(100);
+        return  emp;
+    }
 }
