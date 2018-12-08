@@ -2,11 +2,16 @@ package com.example.RestSample;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class RestSampleApplication {
+public class RestSampleApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestSampleApplication.class, args);
+	}
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(RestSampleApplication.class);
 	}
 }
