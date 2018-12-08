@@ -22,8 +22,6 @@ public Employee getEmployee(@PathVariable(value = "sid") String sid){
     emp.setEmail("avc@gmail.com");
     emp.setName("and");
     emp.setSid(100);
-
-
     return  emp;
 }
 }
