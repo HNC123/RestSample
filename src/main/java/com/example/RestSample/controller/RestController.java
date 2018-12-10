@@ -11,7 +11,7 @@ public class RestController {
 
     @RequestMapping(value = "/welcome",method = RequestMethod.GET)
     public String getMessage(){
-        return "Hello Welcome";
+        return "Welcome to Jenkins Build";
     }
     @RequestMapping(value="/getEmp/{sid}",method = RequestMethod.GET)
     public Employee getEmployee(@PathVariable(value = "sid") String sid){
